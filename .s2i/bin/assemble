@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+echo "---> Installing application source ..."
+cp -Rf /tmp/src/. ./
+
+echo "---> Installing gitbook-cli"
+npm install -g gitbook-cli &>/dev/null
+
+echo "---> Installing gitbook dependencies"
+gitbook install
