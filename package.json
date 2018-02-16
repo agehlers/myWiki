@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "wiki.js": "latest"
+  },
+  "scripts": {
+    "start": "node wiki configure 8080" 
+  }
+}
